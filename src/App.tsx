@@ -25,6 +25,8 @@ import TracingCanvas, { CHAR_ASSOCIATIONS } from './components/TracingCanvas';
 import ParentsDashboard from './components/ParentsDashboard';
 import BadgeAlbum from './components/BadgeAlbum';
 import { sounds } from './utils/sounds';
+// @ts-ignore
+import appIcon from './assets/images/app_icon_1782430677445.jpg';
 
 type Screen = 'welcome' | 'onboarding' | 'map' | 'tracing' | 'album' | 'parents';
 
@@ -258,7 +260,7 @@ export default function App() {
                   className="relative z-10"
                 >
                   <img
-                    src="/src/assets/images/app_icon_1782430677445.jpg"
+                    src={appIcon}
                     alt="Trazos Mágicos Logo"
                     referrerPolicy="no-referrer"
                     className="w-24 h-24 md:w-32 md:h-32 rounded-[24px] md:rounded-[32px] border-4 border-white shadow-[0_8px_16px_rgba(0,0,0,0.15)] object-cover"
